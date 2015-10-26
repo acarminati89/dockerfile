@@ -10,7 +10,7 @@
 FROM ubuntu
 
 # Set Author
-MAINTAINER Anthony Carminati, anthony.carminati@panderasystems.com
+MAINTAINER Anthony Carminati, anthony@carminati.io
 
 # Set Debian front end to noninteractive mode
 ENV DEBIAN_FRONTEND noninteractive
@@ -34,7 +34,7 @@ RUN pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U
 RUN pip install -r /src/requirements.txt
 
 # Expose ports
-EXPOSE 22 5433
+EXPOSE 22
 
 # Add Locale
 RUN locale-gen en_US en_US.UTF-8
