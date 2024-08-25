@@ -1,6 +1,6 @@
 ecdsa==0.11
 gnupg==2.0.0
-paramiko==1.15.2
+paramiko==2.0.9
 psutil==2.2.1
 pycrypto==2.6.1
 requests==2.5.3
